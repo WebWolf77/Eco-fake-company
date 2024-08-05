@@ -1,0 +1,160 @@
+/* Reset some basic elements */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header */
+  header {
+    background: #2E8B57;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo {
+    height: 50px;
+    margin-right: 1rem;
+  }
+  
+  /* Mission Statement */
+  .mission-statement {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .mission-statement h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .mission-statement p {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  
+  /* Products */
+  .products {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .product-item {
+    flex: 1 1 300px;
+    margin: 1rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .product-item img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+  }
+  
+  .product-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .product-item h3 {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Team */
+  .team {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .team-member {
+    flex: 1 1 300px;
+    margin: 1rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .team-member img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+  }
+  
+  .team-member:hover {
+    transform: scale(1.05);
+  }
+  
+  .team-member h3 {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Footer */
+  footer {
+    background: #2E2E2E;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column; /* Stack navbar items vertically on smaller screens */
+    }
+  
+    .product-item,
+    .team-member {
+      flex: 1 1 100%; /* Make items full width on smaller screens */
+      margin: 0.5rem 0;
+    }
+  
+    .mission-statement,
+    .products,
+    .team {
+      padding: 1rem;
+    }
+  }
+
+@media (max-width: 480px) {
+    .logo {
+      height: 40px; /* Adjust logo size for very small screens */
+    }
+  
+    .mission-statement h2 {
+      font-size: 1.5rem;
+    }
+  
+    .mission-statement p {
+      font-size: 1rem;
+    }
+  }
